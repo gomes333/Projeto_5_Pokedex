@@ -6,7 +6,7 @@ import json
 st.set_page_config(layout="wide")
 st.title("Qual é esse Pokemon")
 
-with open("Pokemon_index.json", "r", encoding="utf-8") as arquivo:
+with open("pokemon_index.json", "r", encoding="utf-8") as arquivo:
     nomes_Pokemons = json.load(arquivo)
 ## nome dos pokemons
 nome = st.selectbox("Escolha um Pokkemon:", nomes_Pokemons.values())
